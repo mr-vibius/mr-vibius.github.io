@@ -5,7 +5,7 @@
       href=${g.to||""} 
       target=${g.target||"_self"}
       class=${A()("menu-link",{"menu-link_active":n(j)})}
-      @click=${M=>{g.to&&Object(x.a)()||(M.preventDefault(),I&&I(g))}}
+      @click=${M=>{g.to&&Object(x.a)()||(M.preventDefault(),alert(123),I&&(alert(321),I(g)))}}
       @mouseover=${()=>M.showSubMenu(g.subMenu)}
       @focus=${()=>M.showSubMenu(g.subMenu)}
     >
