@@ -1,44 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    .first-container {
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-    }
-
-    .container {
-      height: 40px;
-      overflow-x: auto;
-      display: flex;
-      width: 100%;
-    }
-
-    .elem {
-      margin-right: 20px;
-      position: relative;
-      user-select: none;
-    }
-  </style>
-</head>
-<body>
-  <div class="first-container">
-    <div class="container">
-      <div class="elem">hasdf</div>
-      <div class="elem">sdfsdf</div>
-      <div class="elem">sdfasdf</div>
-      <div class="elem">sdfasdfasdf</div>
-      <div class="elem">asdfasdfasf</div>
-      <div class="elem">hasdf</div>
-      <div class="elem">sdfsdf</div>
-      <div class="elem">sdfasdf</div>
-      <div class="elem">sdfasdfasdf</div>
-      <div class="elem">asdfasdfasf</div>
-    </div>
-  </div>
-</body>
+<html>
+    <head>
+        <title>Geo Link Test</title>
+    </head>
+    <body>
+        <p><a href="geo:50,10">Location 50/10</a></p>
+        <p><a href="geo:Vienna">Location Vienna</a></p>
+        <p><a href="geo:?z=5&q=New+York">Zoom 5, Search for New York</a></p>
+        <p><a href="geo:?q=San+Francisco&z=15">Zoom 15, Search for San Francisco</a></p>
+        <p><a href="google.navigation:q=San+Francisco">Navigation to San Francisco</a></p>
+        <p><a href="google.navigation:q=50,10">Navigation to 50/10</a></p>
+        <p><a href="http://maps.google.com/maps?saddr=New+York&daddr=San+Francisco">Route New York --> San Francisco</a></p>
+        <p><a href="http://maps.google.com/maps?saddr=50,10&daddr=50,20">Route 50/10 --> 50/20</a></p>
+    </body>
 </html>
